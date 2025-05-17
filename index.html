@@ -5,26 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ankita Mondal | Astrophysicist</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       background-color: #111;
       color: #f5f5f5;
       font-family: "Segoe UI", sans-serif;
       margin: 0;
+      padding: 0 1rem 0 120px; /* leave space for side nav */
+      text-align: left; /* better for reading main content */
+    }
+
+    /* Side navigation container */
+    .side-nav {
+      position: fixed;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+      background-color: #222;
+      padding: 1rem 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
+      z-index: 1000;
+    }
+
+    /* Side nav list styling */
+    .side-nav ul {
+      list-style: none;
+      margin: 0;
       padding: 0;
+    }
+
+    /* Side nav links */
+    .side-nav ul li {
+      margin: 1rem 0;
+    }
+
+    .side-nav ul li a {
+      color: #4da6ff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .side-nav ul li a:hover,
+    .side-nav ul li a:focus {
+      color: #a0c8ff;
+      outline: none;
+    }
+
+    /* Header */
+    header {
+      padding: 3rem 1rem 2rem;
       text-align: center;
     }
 
-    header {
-      padding: 3rem 1rem 2rem;
-    }
-
     .profile-pic {
-      width: 400px;
-      height: 400px;
+      width: 245px;
+      height: 245px;
       object-fit: cover;
       border-radius: 10px;
       border: 3px solid #666;
       margin-bottom: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     h1 {
@@ -44,6 +92,12 @@
       margin: 0 auto 2rem;
       font-size: 1.1rem;
       line-height: 1.6;
+      text-align: center;
+    }
+
+    .links {
+      text-align: center;
+      margin-bottom: 3rem;
     }
 
     .links a {
@@ -55,14 +109,22 @@
 
     section {
       max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-      text-align: left;
+      margin: 0 auto 3rem;
+      padding: 0 1rem;
+    }
+
+    h2.section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #4da6ff;
+      border-bottom: 2px solid #4da6ff;
+      padding-bottom: 0.3rem;
     }
 
     h3 {
       font-size: 1.3rem;
       margin-bottom: 0.3rem;
+      color: #ddd;
     }
 
     footer {
@@ -70,12 +132,21 @@
       padding-bottom: 2rem;
       color: #777;
       font-size: 0.9rem;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
-  <header>
+  <nav class="side-nav">
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="about-me">
     <img src="profile.png" alt="Ankita Mondal" class="profile-pic" />
     <h1>Ankita Mondal</h1>
     <h2>PhD student in Astrophysics at Swinburne University of Technology</h2>
@@ -91,7 +162,7 @@
   </header>
 
   <section id="education">
-    <h2>🎓 Education</h2>
+    <h2 class="section-title">🎓 Education</h2>
 
     <div>
       <h3>PhD in Astrophysics</h3>
@@ -101,7 +172,7 @@
 
     <div>
       <h3>Research Internship</h3>
-      <p><strong>Research School of Astronomy and Astrophysics, Australian National University</strong> (Aug 2022 – Dec 2023)</p>
+      <p><strong>Research School of Astronomy and Astrophysics, Australian National University</strong> (2021 – 2022)</p>
       <p>Worked with Professor Ken Freeman and Dr. Michael Hayden on a project exploring the mechanism behind radial migration of super-solar stars in the Milky Way using GALAH, APOGEE, and Gaia DR3 surveys.</p>
     </div>
 
@@ -114,6 +185,14 @@
       <h3>BSc in Physics (Honours)</h3>
       <p><strong>Cotton University, India</strong> (2015 – 2018)</p>
     </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">📬 Contact</h2>
+    <p>Email: <a href="mailto:amondal@swin.edu.au">amondal@swin.edu.au</a></p>
+    <p>ORCID: <a href="https://orcid.org/0009-0006-9737-8609" target="_blank">0009-0006-9737-8609</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ankita-mondal-5aab23159/" target="_blank">ankita-mondal-5aab23159</a></p>
+    <p>Twitter: <a href="https://x.com/astrowithankita" target="_blank">@astrowithankita</a></p>
   </section>
 
   <footer>
