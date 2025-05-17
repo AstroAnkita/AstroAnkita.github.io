@@ -3,77 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ankita Mondal</title>
+  <title>Ankita Mondal | Astrophysicist</title>
   <style>
     body {
-      background-color: #121212;
-      color: #e0e0e0;
-      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 40px;
     }
 
-    img.profile {
+    header {
+      padding: 3rem 1rem 2rem;
+    }
+
+    .profile-pic {
       width: 245px;
       height: 245px;
-      border-radius: 8px; /* Slightly rounded square */
       object-fit: cover;
-      border: 3px solid #555;
-      margin-bottom: 20px;
+      border-radius: 10px;
+      border: 3px solid #666;
+      margin-bottom: 1rem;
     }
 
     h1 {
       font-size: 2.5rem;
-      margin: 10px 0;
-      color: #ffffff;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
     }
 
     h2 {
-      font-size: 1.25rem;
       font-weight: 400;
-      color: #aaaaaa;
-      margin: 0 0 20px;
+      color: #aaa;
+      margin-bottom: 1.5rem;
     }
 
-    p {
+    p.description {
       max-width: 700px;
-      margin: 0 auto 30px;
-      font-size: 1rem;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
       line-height: 1.6;
     }
 
     .links a {
-      color: #66b0ff;
-      margin: 0 12px;
+      margin: 0 10px;
+      color: #4da6ff;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
     }
 
-    .links a:hover {
-      text-decoration: underline;
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+      color: #777;
+      font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
+  <header>
+    <img src="profile.jpg" alt="Ankita Mondal" class="profile-pic" />
+    <h1>Ankita Mondal</h1>
+    <h2>PhD student in Astrophysics at Swinburne University of Technology</h2>
+    <p class="description">
+      Hi, I'm Ankita from India. I am interested in all things related to our galaxy, the Milky Way. I am currently a PhD candidate at the Centre of Astrophysics and Supercomputing, Swinburne University of Technology, supervised by Professor Michael Murphy and Dr. Chris Flynn. My research focuses on tracing helium abundances through the study of K-dwarf stars.
+    </p>
+    <div class="links">
+      <a href="mailto:amondal@swin.edu.au">Email</a>
+      <a href="https://orcid.org/0009-0006-9737-8609" target="_blank">ORCID</a>
+      <a href="https://www.linkedin.com/in/ankita-mondal-5aab23159/" target="_blank">LinkedIn</a>
+      <a href="https://x.com/astrowithankita" target="_blank">Twitter</a>
+    </div>
+  </header>
 
-  <img src="profile.jpg" alt="Ankita Mondal" class="profile"/>
+  <section id="education">
+    <h2>🎓 Education</h2>
 
-  <h1>Ankita Mondal</h1>
-  <h2>PhD student in Astrophysics at Swinburne University of Technology</h2>
+    <div>
+      <h3>PhD in Astrophysics</h3>
+      <p><strong>Swinburne University of Technology, Australia</strong> (Jan 2024 – Present)</p>
+      <p>My research focuses on tracing helium abundances through detailed spectroscopic analysis of K-dwarf stars, as part of the GALAH DR4 survey.</p>
+    </div>
 
-  <p>
-    Hi, I'm Ankita from India. I am interested in all things related to our galaxy, the Milky Way.
-    I am currently a PhD candidate at the Centre of Astrophysics and Supercomputing,
-    Swinburne University of Technology, supervised by Professor Michael Murphy and Dr. Chris Flynn.
-    My research focuses on tracing helium abundances through the study of K-dwarf stars.
-  </p>
+    <div>
+      <h3>Research Internship</h3>
+      <p><strong>Research School of Astronomy and Astrophysics, Australian National University</strong> (2021 – 2022)</p>
+      <p>Worked with Professor Ken Freeman and Dr. Michael Hayden on a project exploring the mechanism behind radial migration of super-solar stars in the Milky Way using GALAH, APOGEE, and Gaia DR3 surveys.</p>
+    </div>
 
-  <div class="links">
-    <a href="mailto:amondal@swin.edu.au">Email</a>
-    <a href="https://orcid.org/0009-0006-9737-8609" target="_blank">ORCID</a>
-    <a href="https://www.linkedin.com/in/ankita-mondal-5aab23159/" target="_blank">LinkedIn</a>
-    <a href="https://x.com/astrowithankita" target="_blank">Twitter</a>
-  </div>
+    <div>
+      <h3>MSc in Physics (Specialization: Astrophysics)</h3>
+      <p><strong>Tezpur University, India</strong> (2019 – 2021)</p>
+    </div>
 
+    <div>
+      <h3>BSc in Physics (Honours)</h3>
+      <p><strong>Cotton University, India</strong> (2015 – 2018)</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ankita Mondal
+  </footer>
 </body>
 </html>
